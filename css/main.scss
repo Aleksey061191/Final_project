@@ -20,6 +20,7 @@ html,body{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.2px;
+    outline: none;
 }
 .but__dark{
     height: 52px;
@@ -29,6 +30,7 @@ html,body{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.2px;
+    outline: none;
 }
 
 .logo{
@@ -39,6 +41,7 @@ html,body{
         }
 }
 header{
+    padding-top: 33px;
     & .header_content{
         display: flex;
         justify-content: space-between;
@@ -60,11 +63,13 @@ header{
             border-color: #ffffff;
             width: 153px;
             color: #ffffff;
+            
         }
     }
 }
 
 .hero{
+    
     & h1{
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -98,6 +103,8 @@ header{
         & .but__transparent{
                 width: 178px;
                 border-color: #ffffff;
+                color: #ffffff;
+                margin-left: 13px;
             }
     }
     & .hero__img{
@@ -127,9 +134,7 @@ header{
     margin: 0;
     padding: 0;
 }
-.dark{
-    background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
-}
+
 .built_specifically{
     margin-top: 51px;
 
@@ -143,6 +148,13 @@ header{
         margin-top: 101px;
         display: flex;
         justify-content: space-between;
+        @media (max-width:600px) {
+            display: block;
+            &_card{
+                margin: 0 auto;
+                
+            }
+        }
         &_card{
             width: 401px;
             border: 1px solid #dedede;
@@ -153,9 +165,8 @@ header{
                 width: 62px;
                 margin-left: 54px;
                 margin-top: 60px;
-                & img{
-                    width: 100%;
-                    height: 100%;
+                svg{
+                    fill:#03D6F3;
                 }
             }
             & .third_titel{
@@ -180,18 +191,25 @@ header{
                 text-decoration: none;
                 color: #03d6f3;
             }
-
+            &:hover{
+                background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+                width: 406px;
+                .third_titel,p,a{
+                    color: #ffffff;
+                }
+                svg{
+                    fill:white;
+                }
+                
+            }
             
 
         }
-        &_card.dark{
-            & .third_titel,p,a{
-                color: #ffffff;
-            }
+        
         }
      
     }
-}
+
 .process{
     margin-top: 51px;
     padding-top: 110px;
@@ -320,13 +338,46 @@ header{
     margin-top: 51px;
     padding-top: 50px;
     padding-bottom: 83px;
-    & .second_titel,p{
+    & .second_titel, p{
         margin: 0 auto;
         text-align: center;
         margin-bottom: 30px;
+        @media (max-width: 600px) {
+            text-align: left;
+        }
     }
     &__pricing{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        &-order {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            border: 1px solid #dedede;
+            border-radius: 10px;
+            width: 335px;
+            .third_titel{
+            margin: 0 auto;
+            text-align: center;
+            }
+            p{
+                margin-top: 10px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                font-size: 12px;
+                letter-spacing: 0.1px;
+                color: #5c5c5c;
+            }
+            &_img{
+                width: 259px;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &_price{
+                display: flex;
+            }
+        }
     }
 }
