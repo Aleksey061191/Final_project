@@ -95,6 +95,13 @@ header .header_content .but__transparent {
   letter-spacing: 0.2px;
 }
 
+@media (max-width: 600px) {
+  .hero h1 {
+    width: 307px;
+    margin: 55px auto 0 auto;
+  }
+}
+
 .hero p {
   text-align: center;
   color: #e5e5e5;
@@ -105,12 +112,32 @@ header .header_content .but__transparent {
   letter-spacing: 0.2px;
 }
 
+@media (max-width: 600px) {
+  .hero p {
+    width: 334px;
+  }
+}
+
 .hero .hero__buttons {
   margin: 71px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 375px;
+}
+
+@media (max-width: 600px) {
+  .hero .hero__buttons {
+    display: block;
+  }
+  .hero .hero__buttons .but__dark {
+    width: 252px;
+    margin: 55px auto 13px auto;
+  }
+  .hero .hero__buttons .but__transparent {
+    width: 252px;
+    margin: 0 auto 95px auto;
+  }
 }
 
 .hero .hero__buttons .but__dark {
@@ -130,6 +157,13 @@ header .header_content .but__transparent {
   margin: 101px auto 0 auto;
   width: 1021.5px;
   padding-bottom: 85px;
+}
+
+@media (max-width: 600px) {
+  .hero .hero__img {
+    width: 364px;
+    margin: 0 auto;
+  }
 }
 
 .hero .hero__img .hero__img img {
@@ -166,6 +200,12 @@ header .header_content .but__transparent {
   width: 765px;
 }
 
+@media (max-width: 600px) {
+  .built_specifically .second_titel {
+    width: 282px;
+  }
+}
+
 .built_specifically .built_specifically__content {
   margin-top: 101px;
   display: -webkit-box;
@@ -181,7 +221,7 @@ header .header_content .but__transparent {
     display: block;
   }
   .built_specifically .built_specifically__content_card {
-    margin: 0 auto;
+    margin: 45px auto 64px auto;
   }
 }
 
